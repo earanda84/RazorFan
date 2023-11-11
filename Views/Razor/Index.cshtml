@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor Fun !</title>
+</head>
+
+<body>
+    <h1>Aquí hay algunas comidas deliciosas</h1>
+    @{
+        string[] Words = new string[] { "Apple", "Pizza", "Cinnammon Rolls", "Lasagna", "Donuts", "Chocolate Cake",
+    "Burritos" };
+
+        foreach (string word in Words)
+        {
+            if (word.StartsWith("C"))
+            {
+                <p style="color: red;">@word</p>
+            }
+            else
+            {
+                <p>@word</p>
+            }
+        }
+
+    }
+</body>
+
+</html>
